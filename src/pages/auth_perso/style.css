@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./Gotham/Gotham-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gotham', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%; /* Pour s'adapter aux petits écrans */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d62839;
+}
+
+.separator {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.social-login button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.google-btn {
+    background-color: #fff;
+}
+
+.apple-btn {
+    /* background-color: #000;*/
+    color: rgb(0, 0, 0);
+}
+
+.apple-btn img {
+    filter: invert(1); /* Pour inverser la couleur de l'icône Apple si nécessaire */
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Plus large sur les écrans moyens */
+    }
+
+    h1 {
+        font-size: 16px; /* Taille de texte réduite */
+    }
+
+    input, button[type="submit"] {
+        font-size: 14px; /* Taille des textes des inputs et boutons ajustée */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Prend 90 % de la largeur sur les petits écrans */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    input, button[type="submit"] {
+        padding: 8px; /* Ajustement du padding pour les petits écrans */
+        font-size: 12px;
+    }
+
+    .social-login button {
+        padding: 8px; /* Ajustement pour les boutons de login sociaux */
+        font-size: 12px;
+    }
+}
