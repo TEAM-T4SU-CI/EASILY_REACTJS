@@ -1,0 +1,18 @@
+/* index.css */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vous pouvez ajouter des styles personnalisés ici si nécessaire */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ac7272;
+}
+
+* {
+  box-sizing: border-box;
+}

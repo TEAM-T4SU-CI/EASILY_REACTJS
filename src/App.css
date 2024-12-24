@@ -1,0 +1,28 @@
+/* App.css */
+
+/* Exemple de style pour un container d'app */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles personnalisés */
+  .text-lg-custom {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .header-style {
+    background-color: #4A90E2;
+    color: rgb(211, 37, 37);
+    padding: 10px;
+  }
+  
+  .main-layout {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Vous pouvez ajouter plus de styles ici si nécessaire */
+  
