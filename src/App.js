@@ -36,7 +36,8 @@ const App = () => {
               <div className="main-layout">
                 <ProfileSidebar />
                 <Routes>
-                  <Route path="/" element={<ProfileContent />} />
+                
+                  <Route path="/profil" element={<ProfileContent />} />
                   <Route path="/wallet" element={<Wallet />} />
                   <Route path="/order-history" element={<OrderHistory />} />
                   <Route path="/help" element={<Help />} />
